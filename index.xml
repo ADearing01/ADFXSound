@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index version="1" name="ADFXSound" commit="cdcb86de39eea806eca0081101f963cdb188011a">
-  <category name="Raw">
-    <reapack name="ADFX_Helper; set repeat off world.lua" type="script" desc="ADFX_Helper; set repeat off">
+  <category name="Main">
+    <reapack name="ADFX_Helper; set repeat off.lua" type="script" desc="ADFX_Helper; set repeat off">
+      <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
+        <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Raw/ADFX_Helper%3B%20set%20repeat%20off.lua</source>
+      </version>
+    </reapack>
+    <reapack name="ADFX_Helper; set repeat on.lua" type="script" desc="ADFX_Helper; set repeat on">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Raw/ADFX_Helper%3B%20set%20repeat%20off.lua</source>
       </version>
