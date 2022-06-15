@@ -11,6 +11,16 @@
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20set%20repeat%20on.lua</source>
       </version>
     </reapack>
+	<reapack name="ADFX_Helper; copy render directory to clipboard.lua" type="script" desc="ADFX_Helper; copy render directory to clipboard">
+      <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
+        <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20copy%20render%20directory%20to%20clipboard.lua</source>
+      </version>
+    </reapack>
+	<reapack name="ADFX_Item; togglemute.lua" type="script" desc="ADFX_Item; togglemute">
+      <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
+        <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Item%3B%20togglemute.lua</source>
+      </version>
+    </reapack>
   </category>
   <metadata>
     <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
