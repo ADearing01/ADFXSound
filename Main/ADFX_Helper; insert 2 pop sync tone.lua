@@ -17,16 +17,20 @@
 
 platform = reaper.GetOS()
     if platform == "OSX64" or platform == "OSX32" or platform == "OSX" or platform  == "Other" or platform == "macOS-arm64" then
-        separator = [[/]]
+        slash = [[/]]
     else
-        separator = [[\]] --win
+        slash = [[\]] --win
     end
 
 function Main()
-path = reaper.GetResourcePath() .. separator .. 'Scripts' .. separator .. 'ADFXSound' .. separator .. 'Main' .. separator .. 'Media' .. separator .. 'TwoPop1KhzTone.wav'
+path = reaper.GetResourcePath() .. slash .. 'Scripts' .. slash .. 'ADFXSound' .. slash .. 'Main' .. slash .. 'Media' .. slash .. 'TwoPop1KhzTone.wav'
 
-reaper.InsertMedia( path, 0 )
-
+  if reaper.file_exists( path ) then
+    reaper.InsertMedia( path, 0 )
+  else
+    reaper.MB("Download TwoPop1KhzTone.wav on https://www.adfxsound.com/reaper-scripts" .. "\n\nSave to directory of missing media file:" .. "\n\nMissing media file:\n" .. path, "Error", 0)
+    return false
+  end
 end
 
 Main()
