@@ -1,4 +1,3 @@
-
 --[[
  * ReaScript Name: Insert 2 Pop Sync Tone
  * About: A quick way to add a Sync Tone
@@ -15,7 +14,7 @@
   + Initial Release
 --]]
 
-platform = reaper.GetOS()
+platform = reaper.GetOS() --determine OS for pathing seperators / or \
     if platform == "OSX64" or platform == "OSX32" or platform == "OSX" or platform  == "Other" or platform == "macOS-arm64" then
         slash = [[/]]
     else
