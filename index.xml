@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index version="1" name="ADFXSound" commit="aa96dd7e50aa929bbea8bb5bd489da8ba0b0cb4a">
   <category name="Main">
-
     <reapack name="ADFX_Helper; copy render directory to clipboard.lua" type="script" desc="ADFX_Helper; copy render directory to clipboard">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20copy%20render%20directory%20to%20clipboard.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Helper; insert 2 pop sync tone.lua" type="script" desc="Insert 2 Pop Sync Tone">
       <version name="1.0" author="ADFXSound" time="2022-06-20T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20insert%202%20pop%20sync%20tone.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Helper; make variations from markered takes.lua" type="script" desc="ADFX_Helper; make variations from markered takes">
       <version name="1.0" author="ADFX" time="2022-07-12T14:11:55Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
         <source main="main">https://github.com/ADearing01/ADFXSound/raw/aa96dd7e50aa929bbea8bb5bd489da8ba0b0cb4a/Main/ADFX_Helper;%20make%20variations%20from%20markered%20takes.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Helper; set repeat off.lua" type="script" desc="ADFX_Helper; set repeat off">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20set%20repeat%20off.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Helper; set repeat on.lua" type="script" desc="ADFX_Helper; set repeat on">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20set%20repeat%20on.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Helper; take name from clipboard paste.lua" type="script" desc="ADFX_Helper; take name from clipboard paste">
       <version name="1.0" author="ADFX" time="2022-07-12T14:11:55Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
         <source main="main">https://github.com/ADearing01/ADFXSound/raw/aa96dd7e50aa929bbea8bb5bd489da8ba0b0cb4a/Main/ADFX_Helper;%20take%20name%20from%20clipboard%20paste.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Helper; take name to clipboard copy.lua" type="script" desc="ADFX_Helper; take name from clipboard copy">
       <version name="1.0" author="ADFX" time="2022-07-12T14:11:55Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
         <source main="main">https://github.com/ADearing01/ADFXSound/raw/aa96dd7e50aa929bbea8bb5bd489da8ba0b0cb4a/Main/ADFX_Helper;%20take%20name%20to%20clipboard%20copy.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Item; reset selected items volume to default.lua" type="script" desc="ADFX_Helper; reset selected items volume to default">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Item%3B%20reset%20selected%20items%20volume%20to%20default.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Item; select all items on track.lua" type="script" desc="ADFX_Helper; select all items on track.lua">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Item%3B%20select%20all%20items%20on%20track.lua</source>
       </version>
     </reapack>
-
     <reapack name="ADFX_Item; togglemute.lua" type="script" desc="ADFX_Helper; togglemute.lua">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Item%3B%20togglemute.lua</source>
       </version>
     </reapack>
-
   </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 ReaPack Repository\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This is an assortment of my random reaper scripts.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 https://raw.githubusercontent.com/ADearing01/ADFXSound/master/index.xml\par}
+}
+]]></description>
+  </metadata>
 </index>
