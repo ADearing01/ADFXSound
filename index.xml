@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="ADFXSound" commit="aa96dd7e50aa929bbea8bb5bd489da8ba0b0cb4a">
+<index version="1" name="ADFXSound" commit="5906463a32d8405bd59772cc975e0383a25bd212">
   <category name="Main">
     <reapack name="ADFX_Helper; copy render directory to clipboard.lua" type="script" desc="ADFX_Helper; copy render directory to clipboard">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
@@ -12,6 +12,15 @@
       </version>
     </reapack>
     <reapack name="ADFX_Helper; make variations from markered takes.lua" type="script" desc="ADFX_Helper; make variations from markered takes">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 A quick way to duplicate items, and consolidate items for export\par}
+}
+]]></description>
+      </metadata>
       <version name="1.0" author="ADFXSound" time="2022-07-12T14:11:55Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/raw/aa96dd7e50aa929bbea8bb5bd489da8ba0b0cb4a/Main/ADFX_Helper;%20make%20variations%20from%20markered%20takes.lua</source>
       </version>
