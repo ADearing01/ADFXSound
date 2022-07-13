@@ -16,7 +16,8 @@
 --]]
 
 --[[
- * NOTE: This script was designed for usaged with nvk_create, and nvk_workflow, its otherwise untested and persumably less effective. The nvk stuff is purchaseable from nvk @ https://nvktools.gumroad.com/
+*NOTE: This script was designed for usaged with nvk_create, and nvk_workflow, its otherwise untested and less effective. The nvk stuff is purchaseable from nvk @ https://nvktools.gumroad.com/
+*NOTE: This script also requires Lokasenna: Track Selection Follows Item Selection. This script needs to run at all times. https://github.com/ReaTeam/ReaScripts/raw/master/index.xml
  --]]
 
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,7 +86,7 @@ function InsertEmptyItemAtSelection()
     trk = reaper.GetSelectedTrack(0,i-1)
     local start, et = reaper.GetSet_LoopTimeRange2( 0, 0, 0, 0, 0, 0 )
     reaper.CreateNewMIDIItemInProj( trk, start, et, 0)
-  end
+  	end
 
 end
 
@@ -104,18 +105,19 @@ function Main()
 	SetTimeSelectionToItems()
 	GoToPrevTrack()
 	InsertEmptyItemAtSelection()
-
 end
 
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -- ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-reaper.Undo_BeginBlock()
 reaper.PreventUIRefresh(1)
+reaper.Undo_BeginBlock()
 
 Main()
 
+
 reaper.UpdateArrange()
-reaper.Undo_EndBlock("Undo End Block", 0)
+reaper.Undo_EndBlock("Undo End Block", -1)
 reaper.PreventUIRefresh(-1)
+
