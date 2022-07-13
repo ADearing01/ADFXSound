@@ -12,8 +12,8 @@
       </version>
     </reapack>
     <reapack name="ADFX_Helper; make variations from markered takes.lua" type="script" desc="ADFX_Helper; make variations from markered takes">
-      <version name="1.0" author="ADFXSound" time="2022-07-12T14:11:55Z">
-        <source main="main">https://github.com/ADearing01/ADFXSound/raw/aa96dd7e50aa929bbea8bb5bd489da8ba0b0cb4a/Main/ADFX_Helper;%20make%20variations%20from%20markered%20takes.lua</source>
+      <version name="1.1" author="ADFXSound" time="2022-07-12T14:11:55Z">
+        <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20make%20variations%20from%20markered%20takes.lua</source>
       </version>
     </reapack>
     <reapack name="ADFX_Helper; set repeat off.lua" type="script" desc="ADFX_Helper; set repeat off">
