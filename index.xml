@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="ADFXSound" commit="5906463a32d8405bd59772cc975e0383a25bd212">
+<index version="1" name="ADFXSound" commit="bcec339f2f9b72d9d19092fadd3bd3c7fe82f926">
   <category name="Main">
     <reapack name="ADFX_Helper; copy render directory to clipboard.lua" type="script" desc="ADFX_Helper; copy render directory to clipboard">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
@@ -48,6 +48,16 @@
     <reapack name="ADFX_Helper_ cubase style split tool.lua" type="script" desc="ADFX_Helper_ cubase style split tool">
       <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper_%20cubase%20style%20split%20tool.lua</source>
+    <reapack name="ADFX_Helper_ cubase style split tool reset.lua" type="script" desc="ADFX_Helper; cubase style split tool reset">
+      <version name="1.0" author="ADFX" time="2022-07-30T17:48:14Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/ADearing01/ADFXSound/raw/bcec339f2f9b72d9d19092fadd3bd3c7fe82f926/Main/ADFX_Helper_%20cubase%20style%20split%20tool%20reset.lua</source>
+      </version>
+    </reapack>
+    <reapack name="ADFX_Helper_ cubase style split tool.lua" type="script" desc="ADFX_Helper; cubase style split tool">
+      <version name="1.0" author="ADFX" time="2022-07-30T17:48:14Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/ADearing01/ADFXSound/raw/bcec339f2f9b72d9d19092fadd3bd3c7fe82f926/Main/ADFX_Helper_%20cubase%20style%20split%20tool.lua</source>
       </version>
     </reapack>
     <reapack name="ADFX_Item; reset selected items volume to default.lua" type="script" desc="ADFX_Helper; reset selected items volume to default">
