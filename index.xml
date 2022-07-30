@@ -6,6 +6,16 @@
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20copy%20render%20directory%20to%20clipboard.lua</source>
       </version>
     </reapack>
+    <reapack name="ADFX_Helper; cubase style split tool reset.lua" type="script" desc="ADFX_Helper; cubase style split tool reset">
+      <version name="1.0" author="ADFXSound" time="2022-06-14T22:01:32Z">
+        <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper_%20cubase%20style%20split%20tool%20reset.lua</source>
+      </version>
+    </reapack>
+    <reapack name="ADFX_Helper; cubase style split tool.lua" type="script" desc="ADFX_Helper; cubase style split tool">
+      <version name="1.0" author="ADFXSound" time="2022-07-30T17:48:14Z">
+        <source main="main">https://github.com/ADearing01/ADFXSound/raw/bcec339f2f9b72d9d19092fadd3bd3c7fe82f926/Main/ADFX_Helper_%20cubase%20style%20split%20tool.lua</source>
+      </version>
+    </reapack>
     <reapack name="ADFX_Helper; insert 2 pop sync tone.lua" type="script" desc="ADFX_Helper; insert 2 pop sync tone">
       <version name="1.0" author="ADFXSound" time="2022-06-20T22:01:32Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/blob/master/Main/ADFX_Helper%3B%20insert%202%20pop%20sync%20tone.lua</source>
