@@ -46,7 +46,7 @@
       </version>
     </reapack>
     <reapack name="ADFX_Helper; cubase style split tool.lua" type="script" desc="ADFX_Helper; cubase style split tool">
-      <version name="1.0" author="ADFX" time="2022-07-30T17:48:14Z">
+      <version name="1.0" author="ADFXSound" time="2022-07-30T17:48:14Z">
         <source main="main">https://github.com/ADearing01/ADFXSound/raw/bcec339f2f9b72d9d19092fadd3bd3c7fe82f926/Main/ADFX_Helper_%20cubase%20style%20split%20tool.lua</source>
       </version>
     </reapack>
