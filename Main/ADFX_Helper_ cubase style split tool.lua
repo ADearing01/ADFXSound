@@ -41,7 +41,7 @@ function Main()
     reaper.Main_OnCommand(40012, 0) -- Items: Split items at edit or play cursor
   else
   end
-  ultraschall.Defer((Main), "mydeferscript")
+  ultraschall.Defer((Main), "cubase_split_tool")
 end
 
 function Exit()

@@ -28,7 +28,7 @@ if not ultraschall and not ultraschall.IsReaperRendering then
 end
 
 function Main()
-  ultraschall.StopDeferCycle("mydeferscript")
+  ultraschall.StopDeferCycle("cubase_split_tool")
  
 end
 
