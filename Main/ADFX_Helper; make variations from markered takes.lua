@@ -12,9 +12,9 @@
 --[[
  * Changelog:
  * v1.0 (2022-07-10)
-	+ Initial Release
+  + Initial Release
  * v1.1 (2022-07-13)
-	+ Adding additional notes, Lokasenna, and various OCD related things
+  + Adding additional notes, Lokasenna, and various OCD related things
 --]]
 
 --[[
@@ -26,7 +26,7 @@
 -- ~~~~~~~~~~~ GLOBAL VARS ~~~~~~~~~~
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-CycleAmt = 6 -- Define desired amount of variations
+CycleAmt = 8 -- Define desired amount of variations
 EmptySpaceAmt = CycleAmt * 3 --Creates empty space in timeline relative to initial CycleAmt value
 
 commandID = reaper.NamedCommandLookup("_RSca00b007868200550ca8e04476399c75889680f2") --nvk duplicate items SMART
@@ -37,58 +37,58 @@ commandID2 = reaper.NamedCommandLookup("_SWS_SELPREVITEM2") --select previous it
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 function SetTimeSelectionToItems()
-	reaper.Main_OnCommand(40290,0) --Set time selection to items
+  reaper.Main_OnCommand(40290,0) --Set time selection to items
 end
 
 function CutItems()
-	reaper.Main_OnCommand(41173,0) --Item Navigation: Move cursor to start of items
+  reaper.Main_OnCommand(41173,0) --Item Navigation: Move cursor to start of items
 
-	reaper.Main_OnCommand(40059,0) --Edit Cut items/tracks/envelope points (depending on focus) Ignoring time selection
+  reaper.Main_OnCommand(40059,0) --Edit Cut items/tracks/envelope points (depending on focus) Ignoring time selection
 end
 
 function InsertTime(num)
-	local i = 1
-	repeat
-		reaper.Main_OnCommand(40200, 0) -- Timeselection: Insert empty space at time selection (moving later items)
-		i = i + 1
-	until i >= num
+  local i = 1
+  repeat
+    reaper.Main_OnCommand(40200, 0) -- Timeselection: Insert empty space at time selection (moving later items)
+    i = i + 1
+  until i >= num
 end
 
 function PasteItems()
-	position = reaper.GetCursorPosition()
+  position = reaper.GetCursorPosition()
 
-	reaper.Main_OnCommand(40058, 0) --paste items/tracks
+  reaper.Main_OnCommand(40058, 0) --paste items/tracks
 
-	reaper.SetEditCurPos(position, true, false)
+  reaper.SetEditCurPos(position, true, false)
 end
 
 function nvk_duplicate(num)
-	local i = 1
-	repeat
-		reaper.Main_OnCommand(commandID, 0) --nvk duplicate items SMART
-		i = i + 1
-	until i >= num
+  local i = 1
+  repeat
+    reaper.Main_OnCommand(commandID, 0) --nvk duplicate items SMART
+    i = i + 1
+  until i >= num
 end
  
 function SelectPrevItems(num)
-	local i = 1
-	repeat 
-		reaper.Main_OnCommand(commandID2, 0) --select previous items
-		i = i + 1
-	until i >= num
+  local i = 1
+  repeat 
+    reaper.Main_OnCommand(commandID2, 0) --select previous items
+    i = i + 1
+  until i >= num
 end
 
 function GoToPrevTrack()
-	reaper.Main_OnCommand(40286, 0) --Goto previous Track
+  reaper.Main_OnCommand(40286, 0) --Goto previous Track
 
 end
 
 function InsertEmptyItemAtSelection()
-	for i =1, reaper.CountSelectedTracks(0) do
+  for i =1, reaper.CountSelectedTracks(0) do
     trk = reaper.GetSelectedTrack(0,i-1)
     local start, et = reaper.GetSet_LoopTimeRange2( 0, 0, 0, 0, 0, 0 )
     reaper.CreateNewMIDIItemInProj( trk, start, et, 0) --Create the Folder track parent empty Item at the length of all variations
-  	end
+    end
 
 end
 
@@ -97,16 +97,16 @@ end
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 function Main()
-	SetTimeSelectionToItems()
-	CutItems()
-	InsertTime(EmptySpaceAmt)
-	PasteItems()
-	nvk_duplicate(CycleAmt)
-	SetTimeSelectionToItems()
-	SelectPrevItems(CycleAmt)
-	SetTimeSelectionToItems()
-	GoToPrevTrack()
-	InsertEmptyItemAtSelection()
+  SetTimeSelectionToItems()
+  CutItems()
+  InsertTime(EmptySpaceAmt)
+  PasteItems()
+  nvk_duplicate(CycleAmt)
+  SetTimeSelectionToItems()
+  SelectPrevItems(CycleAmt)
+  SetTimeSelectionToItems()
+  GoToPrevTrack()
+  InsertEmptyItemAtSelection()
 end
 
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
